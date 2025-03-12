@@ -20,3 +20,18 @@ Example
   Output: 2
 
 """
+
+def sumOfDigits(num):
+  sum = 0
+  while num > 0:
+    sum = sum + num%10
+    num = num//10
+  return sum
+
+num = int(input("Enter your no.: "))
+
+while num > 9:
+  sum = sumOfDigits(num)
+  num = sum
+
+print(sum)
